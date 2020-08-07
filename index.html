@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+
+    <!-- MY CSS  -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <style>
+        body {
+            background-image: url("img/background.jpg");
+
+        }
+    </style>
+
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png" />
+
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <!-- CONTAINER -->
+    <div class="container">
+        <h1>CALCULADORA</h1>
+        <img class="img-centro" src="img/ms-icon-310x310.png" width="110px" alt="calc-img" />
+
+        <!-- INPUTS -->
+        <br />
+        <br />
+
+        <!-- numero1 -->
+        <div class="form-group">
+            <input class="form-control" type="number" name="numero1" id="numero1" alt="numero1"
+                placeholder="Informe nr" />
+        </div>
+        <!-- numero2 -->
+        <div class="form-group">
+            <input class="form-control" type="number" name="numero2" id="numero2" alt="numero2"
+                placeholder="Informe nr" />
+        </div>
+
+        <select class="form-control" name="operacao" id="operacao">
+            <option value="">--- Escolha opacao ---</option>
+            <option value="1">Adição</option>
+            <option value="2">Subtração</option>
+            <option value="3">Multiplicação</option>
+            <option value="4">Divisão</option>
+        </select>
+
+        <br />
+        <br />
+
+        <div class="col-md-4">
+            <button type="button" class="btn btn-primary" onclick="calcular()">Calcular</button>
+            <button type="button" class="btn btn-danger" onclick="recarregar();">Limpar</button>
+        </div>
+
+        <br />
+        <br />
+        <hr />
+        <div class="resultado">
+            Resultado: <input id="resultado" type="text" class="form-control" readonly />
+        </div>
+
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+    <!-- MEU JS -->
+    <script type="text/javascript" src="calc-func.js"></script>
+
+</body>
+
+</html>

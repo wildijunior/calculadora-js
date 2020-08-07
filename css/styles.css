@@ -1,0 +1,48 @@
+/* CLASS */
+
+.formulario {
+  padding-top: 120px;
+}
+
+.container {
+  padding-top: 30px;
+  background-image: url("img/background.jpg");
+}
+
+.img-centro {
+  display: flex;
+  flex-direction: center;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.resultado{
+  color: whitesmoke;
+  font-size: 1.5rem;
+  text-shadow: 2px 2px 2px black;
+
+}
+
+h1 {
+  color: rgb(63, 179, 179);
+  text-shadow: 2px 2px 2px black;
+  font-family: "Montserrat", sans-serif;
+  font-size: 6rem;
+  line-height: 120px;
+  text-align: center;
+}
+
+@media (min-width: 483px) and (max-width: 900px) {
+  h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.5rem;
+    line-height: 120px;
+    text-align: center;
+  }
+
+  .img-centro {
+    width: 60px;
+    margin: auto;
+  }
+}
