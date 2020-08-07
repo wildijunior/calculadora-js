@@ -14,14 +14,14 @@
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
 
     <!-- MY CSS  -->
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="public/css/styles.css" />
 
     <style>
         body {
-            background-image: url("img/background.jpg");
-
+            background-image: url("public/img/background.jpg");
         }
     </style>
+
 
 
     <!-- FAVICON -->
@@ -34,7 +34,7 @@
     <!-- CONTAINER -->
     <div class="container">
         <h1>CALCULADORA</h1>
-        <img class="img-centro" src="img/ms-icon-310x310.png" width="110px" alt="calc-img" />
+        <img class="img-centro" src="public/img/ms-icon-310x310.png" width="110px" alt="calc-img" />
 
         <!-- INPUTS -->
         <br />
@@ -42,12 +42,12 @@
 
         <!-- numero1 -->
         <div class="form-group">
-            <input class="form-control" type="number" name="numero1" id="numero1" alt="numero1"
+            <input class="form-control" type="text" name="numero1" id="numero1" alt="numero1"
                 placeholder="Informe nr" />
         </div>
         <!-- numero2 -->
         <div class="form-group">
-            <input class="form-control" type="number" name="numero2" id="numero2" alt="numero2"
+            <input class="form-control" type="text" name="numero2" id="numero2" alt="numero2"
                 placeholder="Informe nr" />
         </div>
 
@@ -64,7 +64,7 @@
 
         <div class="col-md-4">
             <button type="button" class="btn btn-primary" onclick="calcular()">Calcular</button>
-            <button type="button" class="btn btn-danger" onclick="recarregar();">Limpar</button>
+            <input type="button" class="btn btn-danger" value="Limpar" onClick="location.href=location.href">
         </div>
 
         <br />
@@ -90,7 +90,7 @@
         crossorigin="anonymous"></script>
 
     <!-- MEU JS -->
-    <script type="text/javascript" src="calc-func.js"></script>
+    <script type="text/javascript" src="public/js/calc-func.js"></script>
 
 </body>
 
